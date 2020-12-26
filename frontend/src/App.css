@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  width: 100%;
+}
+
+.allVids {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+.iframeAllVids {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.restVids {
+  display: grid;
+  grid-template-columns: repeat(1, 500px);
+  grid-auto-rows: 120px;
+  justify-content: end;
+}
+
+.iframeVid {
+  display: block;
+  width: 98vw;
+  margin: 0 auto;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.name img {
+  cursor: pointer;
+  height: 120px;
+}
+
+.name {
+  display: flex;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  min-width: 380px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.name h1 {
+  max-width: 180px;
+  font-size: 0.8rem;
+  padding: 1rem 1rem 0 0;
+}
+
+.name h2 {
+  font-weight: normal;
+  max-width: 180px;
+}
+
+.name .deleteBtn {
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  border: 0;
+  padding: 0.7rem 1.7rem;
+  background-color: rgba(51, 39, 39, 0.794);
+  color: white;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.name .deleteBtn:focus {
+  outline: 0;
+}
+
+.name h2 {
+  font-size: 0.9rem;
+}
+
+.name p {
+  font-size: 0.7rem;
+}
+
+.name img {
+  padding-top: 10px;
+}
+
+.name .icon {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.description {
+  white-space: pre-line;
+}
+
+.addVidBtn {
+  padding: 1rem 1.5rem;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  margin: 1rem;
+}
+
+.addVidBtn:focus {
+  outline: 0;
+}
+
+.addVidForm {
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addVidForm input {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.1rem;
+  margin: 1rem 0;
+}
+.addVidForm label {
+  display: block;
+  padding: 1rem 0;
+}
+
+nav {
+  padding: 0 1rem;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a52c2c;
+  margin-bottom: 1rem;
+  height: 100px;
+}
+
+nav h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.indicator {
+  background-color: red;
+  height: 20px;
+  width: 100%;
+}
+
+.metadata {
+  width: 80%;
+  margin-left: 4rem;
+  font-size: 0.9rem;
+}
+
+.metadata h2,
+.metadata h3,
+.metadata h4,
+.metadata h5,
+.metadata h6 {
+  font-weight: normal;
+}
+
+.metadata h2 {
+  margin-bottom: 0.5rem;
+}
+
+.metadata .likes {
+  display: flex;
+  margin-right: 6rem;
+  font-size: 1.3rem;
+}
+
+.metadata .desc {
+  width: 80%;
+}
+
+.metadata .artist {
+  margin: 1.4rem 0;
+}
+
+.metadata .likesAndDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subBtn {
+  background: red;
+  float: right;
+  margin-right: 2rem;
+  border: 0;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  font-size: 1rem;
+  transform: translate(-0px, -65px);
+  cursor: pointer;
+  border-radius: 2px;
+  border: 0;
+}
+.subBtn {
+  outline: 0;
+}
+
+.back {
+  background-color: #bbb;
+  padding: 0.5rem 1.2rem;
+}
+
+hr {
+  margin: 0rem auto;
+  width: 95%;
+  border: none;
+  height: 1px;
+  color: #aaa;
+  background-color: #aaa;
+}
+
+.userImg {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 0 1.2em 0 0;
+}
+
+.userdata {
+  margin: 1.2rem 0;
+  display: flex;
+}
+
+.licon {
+  margin: 0 0.4rem;
+  cursor: pointer;
+}
+
+.likes {
+  border-bottom: 1px solid #666;
+  margin: 0;
+  padding-bottom: 1.5rem;
+}
+
+.blue {
+  border-color: rgb(6, 95, 212);
+}
+
+.showMore {
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-weight: normal;
+}
+
+.showMore:focus {
+  outline: 0;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0px 0;
+  margin: 10px 0;
+  width: 50%;
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  font-weight: normal;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  border-width: 3px;
+  border-image: #222;
+  border-image-slice: 1;
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #222;
+  font-weight: 700;
+}
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+.form__field:focus ~ .placeCommmentBtn {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.comment .user .date {
+  margin: 5px 0 0 0.5rem;
+  color: #888;
+}
+
+.comment .author {
+  font-weight: bold;
+}
+
+.comment .display {
+  margin: 0.2rem 0 0.5rem 0;
+}
+
+.comment .user {
+  display: flex;
+}
+
+.comment .profilepic {
+  border-radius: 50%;
+}
+
+.commentLike {
+  display: flex;
+  font-size: 1.3rem;
+}
+
+.commentReplies {
+  color: rgb(6, 95, 212);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.commentcount {
+  margin: 2rem 0 1rem 0;
+  font-size: 1.1rem;
+}
+
+.placeCommmentBtn {
+  display: none;
+  border: 0;
+  background: rgb(59, 59, 255);
+  color: white;
+  padding: 0.3rem 2rem;
+  font-size: 1.5rem;
+  float: right;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.commentIcon {
+  margin: 0 0.4rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1525px) {
+  .allVids {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .allVids {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 770px) {
+  .allVids {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
